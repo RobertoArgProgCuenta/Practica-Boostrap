@@ -1,0 +1,115 @@
+  .experience-component
+  {
+    background-color: darkgreen;
+  }
+  .experience-component .description
+  {
+    border-radius: 20px;
+    max-width: 50%;
+    min-width: 30%;
+    max-height: 60%;
+    padding: 10px;
+    text-align: center;
+    word-break: break-all;
+    background-color: whitesmoke;
+  }
+  .experience-component .img-desc-container
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .experience-component .desc-image
+  {
+    padding: 1px;
+    margin:5px;
+    background-color: black;
+    flex-basis: 60%;
+    order: 0;
+  }
+  .experience-component .component-header
+  {
+    padding: 10px;
+    background-color: crimson;
+    margin: 2px 1px 2px 1px;
+  }
+  .desc-image img
+  {
+    max-width: 100%;
+  }
+  
+  .education-component
+  {
+    max-height: 300px;
+    display: inline-flex;
+    align-items:center;
+    justify-content: flex-start;
+  }
+  .education-component .desc-image
+  {
+    width: 45%;
+    margin: 10px 2px 2px 5px;
+    order: 0;
+  }
+  .education-component .rotate-text
+  {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 5%;
+    overflow-wrap: break-word;
+    width: fit-content;
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    align-items: stretch;
+    background-color: brown;
+    text-align: center;
+    text-justify: distribute;
+    justify-content: center;
+    display: inline-flex;
+  }
+
+  .project-component
+  {
+    max-height: 500px;
+    display: inline-flex;
+    align-items:center;
+    justify-content: flex-start;
+  }
+  .proyect-component .project-img
+  {
+    max-width: 50%;
+  }
+  .project-component .project-text
+  {
+    min-width: 25%;
+    max-width: 50%;
+  }
+  .project-component .project-text form
+  {
+    align-self: flex-start;
+    justify-self: first baseline;
+  }
+  
+  .bar-step {
+    position:absolute;
+    margin-top:-20px;
+	z-index:1;
+    font-size:12px;
+}
+
+.label-txt {
+    float: left;
+}
+
+.label-line {
+    float: right;
+    background: #000;
+    height:50px;
+	width:1px;
+    margin-left: 5px;
+}
+
+.label-percent {
+    float: right;
+    margin-left: 5px;   
+}
