@@ -1,3 +1,157 @@
+  body
+  {
+    background-color: rgb(186, 255, 255);
+  }
+  header
+  {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(55, 42, 114);
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header input
+  {
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(101, 81, 188);
+    border: 0px;
+    font-family:"Archivo Black",sans-serif;
+  }
+  header input:hover
+  {
+    opacity: 0.8;
+  }
+  header input:active
+  {
+    opacity: 0.5;
+  }
+
+  header img
+  {
+    max-height: 4cm;
+    align-self: flex-start;
+  }
+  header form 
+  {
+    align-self: center;
+  }
+  header .img-container
+  {
+    position: relative;
+  }
+
+  .banner
+  {
+    background-image:url("./photomania-956867ab4d7eb22c350cae3af365fb9e.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: 2px;
+  }
+  .banner img{
+    visibility: hidden;
+  }
+  .banner h2
+  {
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    color: black;
+    font-family:"Itim";
+  }
+
+  .nav li a
+  {
+    font-family: 'Gowun Batang', serif;
+    font-size:x-large;
+    color: black;
+    text-decoration-line: none;
+  }
+  .nav li:hover
+  {
+    opacity: 0.7;
+  }
+  .nav li:active
+  {
+    opacity: 0.8;
+  }
+  .nav-inicio-wrap
+  {
+    position:relative;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(121, 121, 255);
+  }
+  .nav-inicio
+  {
+    position: sticky;
+    height: auto;
+    top:0px;
+  }
+
+  header >  h1
+  {
+    font-family: 'Archivo Black', sans-serif;
+    
+  }  
+  .component-header,.img-desc-container,.experience-component
+  {
+    font-family: 'Itim', cursive;
+    border-top-left-radius: 25px 25px;
+    border-top-right-radius: 25px 25px;
+  }
+  .bio-component
+  {
+    display: inline-flex;
+    width: 100%;
+    align-items:center;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.422);
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .bio-component .img-y-nombre
+  {
+    justify-content: center;
+    height: 100%;
+    max-width: 25%;
+    border-radius: 10%;
+    background-color: rgba(203, 203, 203, 0.43);
+    padding-top: 3px;
+  }
+  .bio-component .img-y-nombre .img-container
+  {
+    width: 100%;
+    text-align: center;
+  }
+  .bio-component .img-y-nombre .titulos
+  {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: grey;
+  }
+  .bio-component h3
+  {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .bio-component p
+  {
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .bio-component img
+  {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100%;
+  }
+
   .experience-component
   {
     background-color: darkgreen;
@@ -18,6 +172,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 5px;
   }
   .experience-component .desc-image
   {
@@ -44,7 +199,25 @@
     display: inline-flex;
     align-items:center;
     justify-content: flex-start;
+    background-color: rgb(248, 105, 86);
+    margin-top: 2px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-right: 10px;
   }
+
+  .education-component ul
+  {
+    flex-grow: 1;
+    color: rgb(114, 27, 27);
+    background-color: rgb(255, 60, 60);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .education-component ul li
+  {
+    font-size: medium;
+  }
+
   .education-component .desc-image
   {
     width: 45%;
@@ -66,6 +239,9 @@
     text-justify: distribute;
     justify-content: center;
     display: inline-flex;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 50px;
+    margin-right: 5px;
   }
 
   .project-component
@@ -74,42 +250,107 @@
     display: inline-flex;
     align-items:center;
     justify-content: flex-start;
+    background-color: rgb(255, 103, 48);
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid;
   }
   .proyect-component .project-img
   {
-    max-width: 50%;
+    max-width: 40%;
+    margin-right: 5px;
   }
   .project-component .project-text
   {
+    margin-left: 5px;
     min-width: 25%;
     max-width: 50%;
+    align-self: stretch;
   }
+
+  .project-component p
+  {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: 70%;
+    overflow: auto;
+  }
+
+  .project-component h1
+  {
+    font-family: 'Archivo Black', sans-serif;
+  }
+
   .project-component .project-text form
   {
     align-self: flex-start;
     justify-self: first baseline;
   }
+
+  .project-text > form > input
+  {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-style:solid;
+    border-color: rgb(150, 150, 150);
+    border-radius: 10px;
+  }
+  .project-text > form > input:hover
+  {
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+  }
+  .project-text > form > input:active
+  {
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    border-color: rgb(65, 65, 65);
+  }
+
+  .progress-mark-container
+  {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .progress-mark-line
+  {
+    min-width: 1px;
+    max-width: 1px;
+    min-height: 15px;
+    background-color: black;
+  }
+
+  .progress-mark .progress-mark-text
+  {
+    width: 0px;
+    font-family:monospace;
+  }
   
-  .bar-step {
-    position:absolute;
-    margin-top:-20px;
-	z-index:1;
-    font-size:12px;
-}
+  .pm-mid > .progress-mark-line
+  {
+    position: relative;
+    left: 50%;
+  }
+  .pm-last > .progress-mark-line
+  {
+    position: relative;
+    left: 100%;
+  }
+  .pm-last > .progress-mark-text
+  {
+    direction: rtl;
+  }
 
-.label-txt {
-    float: left;
-}
-
-.label-line {
-    float: right;
-    background: #000;
-    height:50px;
-	width:1px;
-    margin-left: 5px;
-}
-
-.label-percent {
-    float: right;
-    margin-left: 5px;   
-}
+  .progress-component
+  {
+    background-color: aquamarine;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid;
+  }
+  .progress-component p
+  {
+    font-family: 'Archivo Black', sans-serif;
+  }
